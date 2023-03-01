@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Molle&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Molle', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav li {
+	margin-right: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+}
+
+main {
+	padding: 20px;
+}
+
+footer {
+	background-color: #EAEAEA;
+	color: black;
+	padding: 10px;
+	text-align: center;
+}
+
+.sr-only{
+	visibility: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+	#menu-toggle ul {
+	  display: none;
+	}
+  
+  
+  /* Style toggle button or label */
+  #menu-toggle label {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-size: 40px 20px;
+	cursor: pointer;
+	background-color: #F6D64A;
+	color: black;
+	font-weight: bold;
+  }
+  
+  /* Show menu when toggle button or label is clicked */
+  #menu-toggle input[type="checkbox"]:checked + label + ul {
+	display: block;
+	
+  }
+
+  #menu-toggle input[type=checkbox] {
+    display: none;
+  }
+
+  #menu-toggle label {
+	float: right;
+  }
+  
+  /* Add padding to the menu items */
+  #menu-toggle ul {
+	padding: 0 1rem;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #55BCD5; /* optional */
+    z-index: 1; /* optional */
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  nav li {
+    margin: 0;
+  }
+
+  h1,h2,h3{
+	font-family: 'Molle', cursive;
+	font-size: 50px;
+  }
+
+  h4, p, q, small, nav, button, form{
+	font-family: 'Montserrat',sans-serif;
+  }
+
+  #plan{
+	background-color: #F6D64A;
+  }
+
+  #plan section {
+	background-color: #55BCD5;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+  }
+  
+  h4 {
+	color: rgb(0, 0, 0);
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+  }
+  
+  a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  img {
+	display: block;
+	margin: 0 auto;
+  }
+
+  #testimonials{
+	background-color: #fff;
+  }
+
+  #about{
+	display: flex;
+
+	background-color: #499BD2;
+  }
+  #about {
+	display: grid
+  }
+  
+  #about section {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: contents;
+}
+
+.required,input[type="radio" i],#fName,#lName,#destination,#travelTime {
+	color: #9B26B0;
+  }
+
+#mySubmit{
+	color: #fff;
+	background-color: #9B26B0;
+}  
+
+}
